@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <%- include('partials/header', {title: 'Inicio'}) %>
+     
+    <h1>peliculas</h1>
+    <ul>
+      
+        <% for (let i =0; i< moviesjson.length; i++) {%>
+            <li>    <a href ="/movies/detail/<%= moviesjson[i].id %>" >   
+              
+                <%= moviesjson[i].title %> 
+    
+               
+                    </a>  
+            </li>
+            <% }%>
+        
+        
+
+    </ul>
+    <p></p>
+        <%- include('partials/footer') %>
+  </body> 
+  </html>

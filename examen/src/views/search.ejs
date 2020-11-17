@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+      
+  <head>
+            <title></title>
+            <link rel='stylesheet' href='./stylesheets/style.css' />
+  </head>
+  
+  <body>
+      
+    <div class=cabeza> 
+              <%- include('partials/header', {title: 'Inicio'}) %>
+      </div> 
+  
+    <main> 
+        <form action="/search" method="POST">
+            <label for="" ></label>
+            <input type="text"  name="title" placeholder="star wars" ><br>
+     
+                 
+                   <button type="search"> buscar!!</button> <br>
+
+            </form>     
+
+        </main>
+       
+        
+   
+
+
+<p></p>
+<%- include('partials/footer') %>
+</body>
+</html>
+
+

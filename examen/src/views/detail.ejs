@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  
+ </body>
+ 
+  <%- include('partials/header', {title: 'Inicio'}) %>
+
+ </html>
+   
+    <h1>peliculas</h1>
+    <ul>
+      
+       
+        <li>   
+          
+           <p>   <%= moviesjson.title %>  </p>  
+           <p>   <%= moviesjson.rating %>  </p>  
+           <p>   <%= moviesjson.awards %>  </p>  
+           <p>   <%= moviesjson.release %>  </p> 
+           
+           
+       </li>
+       
+        
+
+    </ul>
+    <p></p>
+    <%- include('partials/footer') %>
+  </body>
+
+</html>
